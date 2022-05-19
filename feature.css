@@ -1,0 +1,228 @@
+/*---features--*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#features{
+    width: 100%;
+    padding: 70px 0;
+    box-shadow: -4px -3px 45px 21px rgba(0,0,0,0.35);
+}
+.title-text{
+    text-align: center;
+    padding-top: 90px;
+}
+.title-text h1{
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+}
+.title-text p{
+    margin: auto;
+    font-size: 12rem;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-family: 'Kaushan Script', cursive;
+    
+}
+.title-text p::after{
+    content: '';
+    width: 150px;
+    height: 105px;
+    background:linear-gradient(#ca7968, #fff);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    }
+
+.featured-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+}
+.features{
+    flex-basis: 50%;
+}
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.features-img img{
+    width: 70%;
+    border-radius: 10px;
+    border-radius: 2rem;
+}
+.features h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color:#ca7968;
+    text-decoration: underline 4.5px;
+    font-size: 5rem;
+    font-family: 'Kaushan Script', cursive;
+}
+.featres-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.featres-icon .fa{
+    width: 9rem;
+    height: 8rem;
+    font-size: 7.5rem;
+    line-height: 8rem;
+    border-radius: 8px;
+    color: #ca7968;
+    border: 1px solid #ca7968;
+}
+.featres-text p{
+    padding: 0 20px;
+    text-align: initial;
+    font-size: 3rem;
+
+}
+.bx-container {
+    margin-top: 1rem;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+    box-align: end;
+    align-items: flex-end;
+    padding:0 3rem;
+  }
+  
+.bx-container .box {
+    text-align: center;
+    border: 5px solid gainsboro;
+    margin: 5rem 1rem;
+    padding: 6rem 1rem;
+    border-radius: 2rem;
+    height: 37rem;
+    width: 37rem;
+    cursor: pointer;
+    box-shadow: 60px -16px #ca7968;
+}
+     
+
+  .bx-container .box .fa-solid{
+      font-size: 5vh;
+      color:#ca7968;
+  }
+.bx-container .box h1 {
+    font-size: 3rem;
+    color:#ca7968;
+    text-transform: capitalize;
+    padding-top:2rem;
+    cursor: pointer;
+  }
+  
+   .bx-container .box p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:#ca7968;
+    padding-top: .5rem;
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 770px){
+
+    .features-img{
+        flex-basis:100%;
+    }
+    .features-img img{
+        width:100%;
+    }
+   
+    .features{
+        flex-basis: 100%;
+        
+    }
+    .features h1{
+        font-size: 2rem;
+    }
+    .title-text h1{
+        font-size: 35px;
+    }
+    .featres-text p{
+        font-size: 1rem;
+    }
+    .featres-icon .fa{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        line-height: 50px;
+        border-radius: 8px;
+        color: #ca7968;
+        border: 1px solid #ca7968;
+    }
+    .title-text p{
+        font-size: 2rem;
+    }
+    .title-text h1{
+        font-size: 1rem;
+    }
+    .title-text p::after{
+        width: 50px;
+        height: 35px;
+        top: -20px
+    }
+    .featured-box{
+        padding-top: 35px;
+    }
+    .bx-container {
+        margin-top: 3rem;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        gap: 2rem;
+        align-items: flex-end;
+        padding: auto;
+      }
+      
+    .bx-container .box {
+        text-align: center;
+        border: 1px solid black;
+        margin: 5px 5px;
+        padding: 6px 2px;
+        height: 20rem;
+        width: 20rem;
+        box-shadow:4px 4px 4px #ca7968;
+      }
+      .bx-container .box:hover{
+          box-shadow:4px 4px 4px gray;
+      }
+      
+    .bx-container .box h1 {
+        font-size: 1rem;
+        color: black;
+        text-transform: capitalize;
+        padding-top:3rem;
+      }
+      
+       .bx-container .box p {
+        font-size: .8rem;
+        font-weight: bold;
+        color: black;
+        padding-top: .5rem;
+      }
+      .bx-container .box .fa-solid{
+          font-size:10rem;
+      }
+}
+
